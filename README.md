@@ -1,4 +1,6 @@
-# rind-i18n-gulp [![](https://travis-ci.org/creativelive/rind-i18n-gulp.png)](https://travis-ci.org/creativelive/rind-i18n-gulp)
+# rind-modules-gulp [![](https://travis-ci.org/creativelive/rind-modules-gulp.png)](https://travis-ci.org/creativelive/rind-modules-gulp)
+
+Gulp task to create [rind modules](https://github.com/creativelive/rind-modules) symlink tree
 
 ## usage
 
@@ -6,19 +8,19 @@
 'use strict';
 
 var gulp = require('gulp');
-var i18n = require('rind-i18n-gulp');
+var modules = require('rind-modules-gulp');
 
 var opts = {
-  sets: {
-    'foo.js': ['foo/main.json']
+  anatomy: {
+    // rind modules anatomy object
+    lib: true,
+    styles: true
   },
-  locales: [ 'en-US', 'fr-fr' ],
-  output: 'path/to/lang/files',
-  input: 'output/directory'
+  input: 'path/to/input/dir',
+  output: 'path/to/output/dir',
+  verbose: true
 };
 
-gulp.task('i18n', function() {
-  i18n(gulp, gwd, opts)();
-});
+gulp.task('modules', modules(gulp, opts));
 
 ```

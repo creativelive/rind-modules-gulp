@@ -1,7 +1,7 @@
 {
   "name": "rind-modules-gulp",
   "version": "0.0.1",
-  "description": "gulp task to generate rind modules",
+  "description": "gulp task to generate rind modules symlink tree",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/gulp/bin/gulp.js test"
@@ -10,9 +10,11 @@
   "license": "MIT",
   "devDependencies": {
     "gulp": "^3.6.2",
-    "minimist": "^0.1.0"
+    "minimist": "^0.1.0",
+    "rimraf": "^2.2.8"
   },
   "dependencies": {
-    "rind-modules": "0.0.4"
+    "glob": "^4.0.0",
+    "rind-modules": "^0.1.0"
   }
 }
