@@ -15,6 +15,6 @@
   },
   "dependencies": {
     "glob": "^4.0.0",
-    "rind-modules": ">=0.1.0"
+    "rind-modules": ">=0.1.1"
   }
 }
