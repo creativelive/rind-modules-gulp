@@ -1,6 +1,6 @@
 {
   "name": "rind-modules-gulp",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "gulp task to generate rind modules symlink tree",
   "main": "index.js",
   "scripts": {
