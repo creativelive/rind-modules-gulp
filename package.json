@@ -1,12 +1,12 @@
 {
   "name": "rind-modules-gulp",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "gulp task to generate rind modules symlink tree",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/gulp/bin/gulp.js test"
   },
-  "author": "",
+  "author": "Matthew Hadley (https://github.com/diffsky)",
   "license": "MIT",
   "devDependencies": {
     "gulp": "^3.6.2",
@@ -16,5 +16,22 @@
   "dependencies": {
     "glob": "^4.0.0",
     "rind-modules": ">=0.1.1"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/creativelive/rind-modules-gulp.git"
+  },
+  "keywords": [
+    "rind",
+    "modules",
+    "gulp",
+    "task"
+  ],
+  "bugs": {
+    "url": "https://github.com/creativelive/rind-modules-gulp/issues"
+  },
+  "homepage": "https://github.com/creativelive/rind-modules-gulp"
 }
