@@ -1,5 +1,3 @@
-/*eslint no-eval:0 */
-
 'use strict';
 
 var modules = require('..');
