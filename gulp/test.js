@@ -4,7 +4,7 @@ var modules = require('..');
 var path = require('path');
 var fs = require('fs');
 
-module.exports = function(gulp, conf){
+module.exports = function(gulp, conf) {
 
   var opts = {
     anatomy: {
@@ -18,7 +18,7 @@ module.exports = function(gulp, conf){
 
   gulp.task('modules', ['clean'], modules(gulp, opts));
 
-  gulp.task('test', ['modules'], function(){
+  gulp.task('test', ['modules'], function() {
     var expected = [
       path.join(opts.output, 'lib', 'bar', 'aaa', 'index.js'),
       path.join(opts.output, 'lib', 'ccc', 'index.js'),
@@ -26,8 +26,8 @@ module.exports = function(gulp, conf){
       path.join(opts.output, 'styles', 'bar', 'aaa', 'main.css')
     ];
 
-    expected.forEach(function(expect){
-      if(!fs.existsSync(expect)){
+    expected.forEach(function(expect) {
+      if (!fs.existsSync(expect)) {
         gulp.fail = true;
       }
     });

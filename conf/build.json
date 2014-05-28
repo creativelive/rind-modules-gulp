@@ -1,0 +1,8 @@
+{
+  "lint": [
+    "!node_modules/**/*.js",
+    "!test/out/**/*.js",
+    "**/*.js"
+  ],
+  "clean" : "test/out"
+}

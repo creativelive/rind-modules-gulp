@@ -1,17 +1,21 @@
 {
   "name": "rind-modules-gulp",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "gulp task to generate rind modules symlink tree",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/gulp/bin/gulp.js test"
+    "test": "./node_modules/gulp/bin/gulp.js lint && ./node_modules/gulp/bin/gulp.js test"
   },
   "author": "Matthew Hadley (https://github.com/diffsky)",
   "license": "MIT",
   "devDependencies": {
     "gulp": "^3.6.2",
     "minimist": "^0.1.0",
-    "rimraf": "^2.2.8"
+    "rimraf": "^2.2.8",
+    "confidence": "^0.12.1",
+    "gulp-eslint": "^0.1.7",
+    "gulp-diff": "^0.1.4",
+    "gulp-jsbeautifier": "0.0.2"
   },
   "dependencies": {
     "glob": "^4.0.0",

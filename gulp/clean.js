@@ -2,9 +2,9 @@
 
 var rimraf = require('rimraf');
 
-module.exports = function(gulp){
+module.exports = function(gulp) {
   // clean the workspace
-  gulp.task('clean', function (cb) {
+  gulp.task('clean', function(cb) {
     rimraf('test/out', cb);
   });
 };
