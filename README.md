@@ -1,4 +1,4 @@
-# rind-modules-gulp [![](https://travis-ci.org/creativelive/rind-modules-gulp.png)](https://travis-ci.org/creativelive/rind-modules-gulp)
+# rind-modules-gulp [![](https://travis-ci.org/creativelive/rind-modules-gulp.svg)](https://travis-ci.org/creativelive/rind-modules-gulp)
 
 Gulp task to create [rind modules](https://github.com/creativelive/rind-modules) symlink tree
 
