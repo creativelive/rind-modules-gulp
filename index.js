@@ -11,7 +11,7 @@ module.exports = function i18n(gulp, conf) {
     cb = cb || function() {};
     rindModules(conf);
     // get any rind modules in node_modules
-    var nmPath = path.join(conf.input || process.cwd(), 'node_modules');
+    var nmPath = path.join(conf.input || process.cwd(), 'node_modules', conf.scope || '');
     var mods = glob.sync('*.rind', {
       cwd: nmPath
     });
